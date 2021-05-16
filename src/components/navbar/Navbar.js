@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 
-//transform -translate-y-full
-
 const Navbar = () => {
 	const [menuIsOpen, setMenuIsOpen] = useState("");
 
@@ -13,11 +11,11 @@ const Navbar = () => {
 			<div className="flex justify-between w-full px-4">
 				<div className="flex items-center flex-shrink-0 text-white mr-6 ">
 					<span className="font-semibold text-xl tracking-tight">
-						Tailwind CSS
+						Franco Veliz
 					</span>
 				</div>
-				<div className="block lg:hidden" onClick={handleMenuOpen}>
-					<button className="flex items-center px-3 py-2 border rounded text-gray-50 border-gray-600 hover:text-white hover:border-gray-50">
+				<div className="block lg:hidden " onClick={handleMenuOpen}>
+					<button className="flex items-center px-3 py-2 border rounded text-gray-50 border-gray-600 hover:text-white hover:border-gray-200   ">
 						<svg
 							className="fill-current h-3 w-3"
 							viewBox="0 0 20 20"
@@ -29,7 +27,7 @@ const Navbar = () => {
 				</div>
 			</div>
 			<div
-				className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto px-4 bg-teal ${menuIsOpen}`}>
+				className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto px-4 ${menuIsOpen}`}>
 				<div className="text-sm lg:flex-grow">
 					<a
 						href="#"
