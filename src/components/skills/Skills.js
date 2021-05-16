@@ -12,14 +12,38 @@ import {
 import { TechnologyIcon } from "../../components";
 
 const technologyIcons = [
-	Html5Icon,
-	Css3Icon,
-	JsIcon,
-	ReactIcon,
-	SassIcon,
-	GitIcon,
-	BootstrapIcon,
-	TailwindIcon,
+	{
+		component: Html5Icon,
+		name: "HTML 5",
+	},
+	{
+		component: Css3Icon,
+		name: "CSS 3",
+	},
+	{
+		component: JsIcon,
+		name: "JavaScript",
+	},
+	{
+		component: ReactIcon,
+		name: "React",
+	},
+	{
+		component: SassIcon,
+		name: "SASS",
+	},
+	{
+		component: GitIcon,
+		name: "Git",
+	},
+	{
+		component: BootstrapIcon,
+		name: "Bootstrap",
+	},
+	{
+		component: TailwindIcon,
+		name: "Tailwind",
+	},
 ];
 
 const Skills = () => {
@@ -29,7 +53,10 @@ const Skills = () => {
 			<p>LENGUAJES DE PROGRAMACION Y HERRAMIENTAS</p>
 			<div className="flex gap-5 overflow-x-auto">
 				{technologyIcons.map(Icon => (
-					<TechnologyIcon IconComponent={Icon} />
+					<TechnologyIcon
+						IconComponent={Icon.component}
+						name={Icon.name}
+					/>
 				))}
 			</div>
 		</div>
