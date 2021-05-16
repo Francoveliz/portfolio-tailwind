@@ -27,7 +27,7 @@ const Navbar = () => {
 				</div>
 			</div>
 			<div
-				className={`w-full block bg-gray-800 flex-grow lg:flex lg:items-center lg:w-auto px-4 ${menuIsOpen} absolute top-16 pb-4`}>
+				className={`w-full block bg-gray-800 flex-grow lg:flex lg:items-center lg:w-auto px-4 ${menuIsOpen} absolute top-16 pb-5`}>
 				<div className="text-sm lg:flex-grow">
 					<a
 						href="#"
