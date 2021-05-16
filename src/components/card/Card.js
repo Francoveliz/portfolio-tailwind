@@ -2,7 +2,7 @@ import React from "react";
 
 const Card = () => {
 	return (
-		<div className="wrapper max-w-xs bg-gray-50 rounded shadow-lg overflow-hidden  mb-11">
+		<div className="wrapper w-full bg-gray-50 rounded shadow-lg overflow-hidden  mb-11">
 			<div>
 				<img
 					src="https://cdn.pixabay.com/photo/2016/05/24/16/48/mountains-1412683_1280.png"

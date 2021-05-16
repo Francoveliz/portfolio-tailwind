@@ -7,7 +7,7 @@ const TechnologyIcon = ({ IconComponent, name }) => {
 				<div className="w-14 h-14 text-yellow-600 mx-auto mb-6 flex justify-items-center items-center ">
 					<IconComponent />
 				</div>
-				<p className="text-center	text-gray-800 font-semibold">{name}</p>
+				<p className="text-center	text-gray-800 font-bold">{name}</p>
 			</div>
 		</div>
 	);
