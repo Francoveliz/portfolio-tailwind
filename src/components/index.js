@@ -9,3 +9,5 @@ export { default as Card } from "./card/Card";
 export { default as Skills } from "./skills/Skills";
 
 export { default as TechnologyIcon } from "./technology-icon/TechnologyIcon";
+
+export { default as Education } from "./education/Education";

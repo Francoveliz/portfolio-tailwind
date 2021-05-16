@@ -7,7 +7,7 @@ const Navbar = () => {
 		menuIsOpen === "" ? setMenuIsOpen("hidden") : setMenuIsOpen("");
 
 	return (
-		<nav className="flex items-center justify-between flex-wrap py-5 bg-gray-800">
+		<nav className="flex items-center justify-between flex-wrap py-5 bg-gray-800 relative">
 			<div className="flex justify-between w-full px-4">
 				<div className="flex items-center flex-shrink-0 text-white mr-6 ">
 					<span className="font-semibold text-xl tracking-tight">
@@ -27,7 +27,7 @@ const Navbar = () => {
 				</div>
 			</div>
 			<div
-				className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto px-4 ${menuIsOpen}`}>
+				className={`w-full block bg-gray-800 flex-grow lg:flex lg:items-center lg:w-auto px-4 ${menuIsOpen} absolute top-16 pb-4`}>
 				<div className="text-sm lg:flex-grow">
 					<a
 						href="#"
