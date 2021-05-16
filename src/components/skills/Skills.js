@@ -49,9 +49,8 @@ const technologyIcons = [
 const Skills = () => {
 	return (
 		<div className="mx-4">
-			<p className="text-5xl mb-11">Featured Proyects</p>
-			<p>LENGUAJES DE PROGRAMACION Y HERRAMIENTAS</p>
-			<div className="flex gap-5 overflow-x-auto">
+			<h2 className="text-5xl mb-11 ">Skills</h2>
+			<div className="flex gap-5 overflow-x-auto pb-4">
 				{technologyIcons.map(Icon => (
 					<TechnologyIcon
 						IconComponent={Icon.component}

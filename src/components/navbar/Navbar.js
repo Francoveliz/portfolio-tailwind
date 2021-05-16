@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const Navbar = () => {
-	const [menuIsOpen, setMenuIsOpen] = useState("");
+	const [menuIsOpen, setMenuIsOpen] = useState("hidden");
 
 	const handleMenuOpen = () =>
 		menuIsOpen === "" ? setMenuIsOpen("hidden") : setMenuIsOpen("");
