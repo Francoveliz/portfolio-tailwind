@@ -50,13 +50,25 @@ const Skills = () => {
 	return (
 		<div className="mx-4 mb-12">
 			<h2 className="text-5xl mb-11 ">Skills</h2>
-			<div className="flex gap-5 overflow-x-auto pb-4 custom-scrollbar">
-				{technologyIcons.map(Icon => (
-					<TechnologyIcon
-						IconComponent={Icon.component}
-						name={Icon.name}
-					/>
-				))}
+			<div className="flex gap-5 overflow-x-auto pb-4 custom-scrollbar slider">
+				<div className="slide-track">
+					{technologyIcons.map(Icon => (
+						<div className="slide">
+							<TechnologyIcon
+								IconComponent={Icon.component}
+								name={Icon.name}
+							/>
+						</div>
+					))}
+					{technologyIcons.map(Icon => (
+						<div className="slide">
+							<TechnologyIcon
+								IconComponent={Icon.component}
+								name={Icon.name}
+							/>
+						</div>
+					))}
+				</div>
 			</div>
 		</div>
 	);
