@@ -8,6 +8,7 @@ import {
 	GitIcon,
 	BootstrapIcon,
 	TailwindIcon,
+	CheckIcon,
 } from "../../assets/icons";
 import { TechnologyIcon } from "../../components";
 
@@ -50,8 +51,8 @@ const Skills = () => {
 	return (
 		<div className="mx-4 mb-12">
 			<h2 className="text-5xl mb-11 ">Skills</h2>
-			<div className="flex gap-5 overflow-x-auto pb-4 custom-scrollbar slider">
-				<div className="slide-track">
+			<div className="flex gap-5 overflow-x-auto pb-4  custom-scrollbar slider ">
+				<div className="slide-track ">
 					{technologyIcons.map(Icon => (
 						<div className="slide">
 							<TechnologyIcon
@@ -69,6 +70,17 @@ const Skills = () => {
 						</div>
 					))}
 				</div>
+			</div>
+			<div>
+				{technologyIcons.map(icon => (
+					<p className="flex items-center">
+						<div className="text-gray-50 w-4 mr-3 ">
+							<CheckIcon />
+						</div>
+
+						<p>{icon.name}</p>
+					</p>
+				))}
 			</div>
 		</div>
 	);

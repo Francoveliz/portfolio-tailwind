@@ -3,6 +3,8 @@ import {
 	LinkedinIcon,
 	GithubIcon,
 	FreecodecampIcon,
+	LocationIcon,
+	EmailIcon,
 } from "../../assets/icons";
 
 const socialMedia = [
@@ -31,12 +33,23 @@ const SocialMediaIcons = ({ Component, link }) => (
 const About = () => {
 	return (
 		<div className="px-4">
-			<p className="text-7xl uppercase font-bold tracking-tight	mb-5">
+			<p className="text-7xl uppercase font-bold tracking-tight	mb-10">
 				Franco <p className="text-green-300">Veliz</p>
 			</p>
-			<p>Argentina - Buenos Aires</p>
-			<p>+54 011 6696 9916</p>
-			<p>francoleandroveliz@gmail.com</p>
+			<div className="mb-10">
+				<div className="flex items-center mb-5">
+					<div className="text-gray-50 w-5 mr-3">
+						<LocationIcon />
+					</div>
+					<p>Argentina - Buenos Aires</p>
+				</div>
+				<div className="flex items-center">
+					<div className="text-gray-50 w-5 mr-3">
+						<EmailIcon />
+					</div>
+					<p>francoleandroveliz@gmail.com</p>
+				</div>
+			</div>
 			<div className="my-5 flex gap-5">
 				{socialMedia.map(Icon => (
 					<SocialMediaIcons Component={Icon.component} link={Icon.link} />

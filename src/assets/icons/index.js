@@ -19,3 +19,9 @@ export { default as GitIcon } from "./GitIcon";
 export { default as BootstrapIcon } from "./BootstrapIcon";
 
 export { default as TailwindIcon } from "./TailwindIcon";
+
+export { default as LocationIcon } from "./LocationIcon";
+
+export { default as EmailIcon } from "./EmailIcon";
+
+export { default as CheckIcon } from "./CheckIcon";
