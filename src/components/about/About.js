@@ -6,6 +6,8 @@ import {
 	LocationIcon,
 	EmailIcon,
 } from "../../assets/icons";
+import { ProfileIlustration } from "../../assets/ilustrations";
+import { PrimaryButton } from "../../components";
 
 const socialMedia = [
 	{
@@ -24,7 +26,7 @@ const socialMedia = [
 
 const SocialMediaIcons = ({ Component, link }) => (
 	<a href={link} target="_blank" rel="noopener noreferrer">
-		<div className="w-12 bg-gray-800 hover:bg-green-600 p-3 rounded-full flex justify-center justify-items-center">
+		<div className="w-12 bg-gray-800 hover:bg-purple-600 p-3 rounded-full flex justify-center justify-items-center">
 			<Component />
 		</div>
 	</a>
@@ -32,28 +34,22 @@ const SocialMediaIcons = ({ Component, link }) => (
 
 const About = () => {
 	return (
-		<div className="px-4">
-			<p className="text-7xl uppercase font-bold tracking-tight	mb-10">
-				Franco <p className="text-green-300">Veliz</p>
-			</p>
-			<div className="mb-10">
-				<div className="flex items-center mb-5">
-					<div className="text-gray-50 w-5 mr-3">
-						<LocationIcon />
-					</div>
-					<p>Argentina - Buenos Aires</p>
-				</div>
-				<div className="flex items-center">
-					<div className="text-gray-50 w-5 mr-3">
-						<EmailIcon />
-					</div>
-					<p>francoleandroveliz@gmail.com</p>
-				</div>
+		<div className="p-10 flex flex-col mb-24 lg:flex-row lg:items-end gap-24 bg-gray-800 rounded-lg">
+			<div className="w-full text-purple-600 flex-grow order-2 lg:order-first">
+				<ProfileIlustration />
 			</div>
-			<div className="my-5 flex gap-5">
-				{socialMedia.map(Icon => (
-					<SocialMediaIcons Component={Icon.component} link={Icon.link} />
-				))}
+			<div className="flex flex-col gap-10">
+				<p className="text-7xl uppercase font-bold tracking-tight	">
+					Franco <span className="text-purple-500">Veliz</span>
+				</p>
+				<p className="">
+					Técnico en informática, con conocimientos en programación y
+					desarrollo front end, desarrollados a través de proyectos
+					propios.
+				</p>
+				<div className="lg:ml-auto">
+					<PrimaryButton>Download CV</PrimaryButton>
+				</div>
 			</div>
 		</div>
 	);

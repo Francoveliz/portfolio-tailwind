@@ -11,3 +11,7 @@ export { default as Skills } from "./skills/Skills";
 export { default as TechnologyIcon } from "./technology-icon/TechnologyIcon";
 
 export { default as Education } from "./education/Education";
+
+export { default as PrimaryButton } from "./primary-button/PrimaryButton";
+
+export { default as Container } from "./container/Container";

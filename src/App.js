@@ -4,7 +4,7 @@ function App() {
 	return (
 		<div className="min-h-screen bg-gray-900 text-gray-50 font-mono ">
 			<Navbar />
-			<div className="pb-60 pt-10 mx-auto container">
+			<div className="pb-60 pt-10 mx-auto container lg:px-32 px-4">
 				<About />
 				<Portfolio />
 				<Skills />
