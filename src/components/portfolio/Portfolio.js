@@ -1,18 +1,19 @@
 import React from "react";
-import { Card } from "../";
+import { Card, SectionContainer } from "../";
 
 const Portfolio = () => {
 	return (
-		<div className="px-5 py-10 w-full">
-			<p className="text-5xl mb-11">Featured Proyects</p>
-			<div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-5 mx-auto flex-wrap ">
-				{[1, 1, 1].map(el => (
-					<div>
-						<Card />
-					</div>
-				))}
+		<SectionContainer>
+			<div className="p-6 w-full ">
+				<div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-5 mx-auto flex-wrap ">
+					{[1, 1, 1].map(el => (
+						<div>
+							<Card />
+						</div>
+					))}
+				</div>
 			</div>
-		</div>
+		</SectionContainer>
 	);
 };
 

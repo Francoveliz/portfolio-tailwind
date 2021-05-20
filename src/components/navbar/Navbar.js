@@ -9,9 +9,9 @@ const Navbar = () => {
 		menuIsOpen === "" ? setMenuIsOpen("hidden") : setMenuIsOpen("");
 
 	return (
-		<nav className=" py-5 bg-gray-800">
+		<nav className=" py-5 bg-gray-800 relative">
 			<Container>
-				<div className=" container flex items-center justify-between flex-wrap relative lg:static ">
+				<div className=" container flex items-center justify-between flex-wrap  lg:static ">
 					<div className="flex justify-between w-full lg:w-auto w-10">
 						<div className="flex items-center flex-shrink-0 text-white mr-6">
 							<span className="font-semibold text-xl tracking-tight">
@@ -19,7 +19,7 @@ const Navbar = () => {
 							</span>
 						</div>
 						<div className="block lg:hidden " onClick={handleMenuOpen}>
-							<button className="flex items-center px-3 py-2 border rounded text-gray-50 border-gray-600 hover:text-white hover:border-gray-200   ">
+							<button className="flex items-center px-3 py-2 border rounded text-gray-50 border-gray-600 hover:text-white hover:border-gray-200">
 								<svg
 									className="fill-current h-3 w-3"
 									viewBox="0 0 20 20"
@@ -31,7 +31,7 @@ const Navbar = () => {
 						</div>
 					</div>
 					<div
-						className={`w-full lg:w-auto block bg-gray-800 flex-grow lg:flex lg:items-center lg:w-auto px-4 ${menuIsOpen} absolute lg:static top-16 pb-5 lg:pb-0 `}>
+						className={`w-screen bg-gray-800 flex-grow px-4 absolute top-16 left-0 pb-5 ${menuIsOpen} lg:pb-0 lg:static lg:w-auto lg:flex lg:items-center`}>
 						<div className="text-sm lg:flex-grow">
 							<a
 								href="#"

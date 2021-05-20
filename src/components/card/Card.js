@@ -1,16 +1,25 @@
 import React from "react";
+import { PrimaryButton, OutlinedButton } from "../";
+
+const techStack = ["react", "redux", "html"];
 
 const Card = () => {
 	return (
-		<div className="bg-gray-50 rounded shadow-lg overflow-hidden">
+		<div className="p-4 bg-gray-50 rounded-lg overflow-hidden flex flex-col gap-5">
 			<div>
 				<img
+					className="rounded-lg"
 					src="https://cdn.pixabay.com/photo/2016/05/24/16/48/mountains-1412683_1280.png"
 					alt="montaña"
 				/>
 			</div>
-			<div className="p-3 space-y-3">
-				<h3 className="text-gray-700 font-semibold text-md capitalize">
+			<div className="text-gray-900 font-semibold flex gap-3">
+				{techStack.map(tech => (
+					<span className=" py-1 px-2 rounded-lg shadow-sm cursor-pointer hover:shadow">{`#${tech}`}</span>
+				))}
+			</div>
+			<div className=" flex flex-col gap-5">
+				<h3 className="text-gray-700 text-xl font-extrabold text-md capitalize">
 					rest countries api
 				</h3>
 				<p className="text-sm text-gray-900 ">
@@ -19,13 +28,9 @@ const Card = () => {
 					profesonales en alpinismo.
 				</p>
 			</div>
-			<div className="flex p-3 gap-2">
-				<button className="ring-inset ring ring-green-800 text-green-900 w-1/2 flex justify-center py-2 font-semibold transition duration-300 hover:text-green-700 focus:outline-none rounded">
-					Code
-				</button>
-				<button className=" text-gray-50 w-1/2 flex justify-center py-2 font-semibold transition duration-300 hover:text-gray-50 hover:bg-green-700 focus:outline-none bg-green-800 rounded">
-					Demo
-				</button>
+			<div className="flex gap-2 ">
+				<OutlinedButton>Code</OutlinedButton>
+				<PrimaryButton>Demo</PrimaryButton>
 			</div>
 		</div>
 	);

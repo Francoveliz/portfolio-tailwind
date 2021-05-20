@@ -10,7 +10,7 @@ import {
 	TailwindIcon,
 	CheckIcon,
 } from "../../assets/icons";
-import { TechnologyIcon } from "../../components";
+import { SkillIcon } from "../../components";
 
 const technologyIcons = [
 	{
@@ -55,18 +55,12 @@ const Skills = () => {
 				<div className="slide-track ">
 					{technologyIcons.map(Icon => (
 						<div className="slide">
-							<TechnologyIcon
-								IconComponent={Icon.component}
-								name={Icon.name}
-							/>
+							<SkillIcon IconComponent={Icon.component} name={Icon.name} />
 						</div>
 					))}
 					{technologyIcons.map(Icon => (
 						<div className="slide">
-							<TechnologyIcon
-								IconComponent={Icon.component}
-								name={Icon.name}
-							/>
+							<SkillIcon IconComponent={Icon.component} name={Icon.name} />
 						</div>
 					))}
 				</div>
