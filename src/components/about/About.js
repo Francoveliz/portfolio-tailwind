@@ -8,6 +8,7 @@ import {
 } from "../../assets/icons";
 import { ProfileIlustration } from "../../assets/ilustrations";
 import { PrimaryButton, SectionContainer } from "../../components";
+import { Wave } from "../../assets/svg";
 
 const socialMedia = [
 	{
@@ -34,26 +35,29 @@ const SocialMediaIcons = ({ Component, link }) => (
 
 const About = () => {
 	return (
-		<SectionContainer>
-			<div className="p-6 flex flex-col  gap-24 lg:flex-row lg:items-end">
-				<div className="flex flex-col gap-10 ">
-					<p className="text-7xl uppercase font-bold tracking-tight">
-						Franco <span className="text-purple-500">Veliz</span>
-					</p>
-					<p className="">
-						Técnico en informática, con conocimientos en programación y
-						desarrollo front end, desarrollados a través de proyectos
-						propios.
-					</p>
-					<div className="lg:ml-auto">
-						<PrimaryButton>Download CV</PrimaryButton>
+		<div>
+			<div className=" bg-blue-500 text-white flex pt-4 lg:pt-0">
+				<div className=" container  flex flex-col gap-12 lg:flex-row  lg:items-center  lg:pt-32">
+					<div className="flex flex-col  ">
+						<p className="text-4xl uppercase font-bold tracking-tight mb-4">
+							¡Hola! Soy Franco Veliz
+						</p>
+						<p className="text-2xl font-semibold mb-16">
+							Desarrollador Front End
+						</p>
+						<div className="">
+							<PrimaryButton>Download CV</PrimaryButton>
+						</div>
+					</div>
+					<div className="w-full text-blue-400 flex-grow ">
+						<ProfileIlustration />
 					</div>
 				</div>
-				<div className="w-full text-purple-600 flex-grow ">
-					<ProfileIlustration />
-				</div>
 			</div>
-		</SectionContainer>
+			<div className="text-blue-500">
+				<Wave />
+			</div>
+		</div>
 	);
 };
 

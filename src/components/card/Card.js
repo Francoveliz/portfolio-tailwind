@@ -5,7 +5,7 @@ const techStack = ["react", "redux", "html"];
 
 const Card = () => {
 	return (
-		<div className="p-5 bg-gray-50 rounded-lg overflow-hidden flex flex-col gap-5">
+		<div className="p-5 rounded-lg overflow-hidden flex flex-col gap-5 shadow">
 			<div>
 				<img
 					className="rounded-lg"

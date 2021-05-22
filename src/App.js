@@ -1,10 +1,12 @@
 import { Navbar, About, Portfolio, Skills, Education } from "./components";
+import { backgroundColor } from "./assets/utils/theme";
 
 function App() {
 	return (
-		<div className="min-h-screen bg-gray-900 text-gray-50 font-mono ">
+		<div
+			className={`min-h-screen text-gray-900 font-sans ${backgroundColor}`}>
 			<Navbar />
-			<div className="flex flex-col	gap-20 pb-60 pt-10 mx-auto container lg:px-32 px-4">
+			<div className="flex flex-col pb-60 ">
 				<About />
 				<Portfolio />
 				<Skills />
