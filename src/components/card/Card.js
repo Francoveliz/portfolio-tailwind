@@ -5,7 +5,7 @@ const techStack = ["react", "redux", "html"];
 
 const Card = () => {
 	return (
-		<div className="p-4 bg-gray-50 rounded-lg overflow-hidden flex flex-col gap-5">
+		<div className="p-5 bg-gray-50 rounded-lg overflow-hidden flex flex-col gap-5">
 			<div>
 				<img
 					className="rounded-lg"
@@ -15,7 +15,7 @@ const Card = () => {
 			</div>
 			<div className="text-gray-900 font-semibold flex gap-3">
 				{techStack.map(tech => (
-					<span className=" py-1 px-2 rounded-lg shadow-sm cursor-pointer hover:shadow">{`#${tech}`}</span>
+					<span className=" py-1 px-2 rounded-lg shadow-sm cursor-pointer hover:shadow hover:text-purple-700">{`#${tech}`}</span>
 				))}
 			</div>
 			<div className=" flex flex-col gap-5">

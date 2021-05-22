@@ -35,7 +35,7 @@ const SocialMediaIcons = ({ Component, link }) => (
 const About = () => {
 	return (
 		<SectionContainer>
-			<div className="p-6 flex flex-col mb-24 gap-24 lg:flex-row lg:items-end">
+			<div className="p-6 flex flex-col  gap-24 lg:flex-row lg:items-end">
 				<div className="flex flex-col gap-10 ">
 					<p className="text-7xl uppercase font-bold tracking-tight">
 						Franco <span className="text-purple-500">Veliz</span>

@@ -1,13 +1,6 @@
 import React from "react";
 
-const EducationItem = ({ title, organization }) => (
-	<div className="mb-16">
-		<div className="font-extrabold text-2xl mb-3 uppercase">{title}</div>
-		<p className="font-bold text-base text-gray-200 mb-5">
-			{organization}
-		</p>
-	</div>
-);
+import { SectionContainer } from "../";
 
 const titles = [
 	{
@@ -32,17 +25,34 @@ const titles = [
 	},
 ];
 
+const EducationItem = ({ title, organization }) => (
+	<div className="mb-16">
+		<div className="font-extrabold text-2xl mb-3 uppercase text-gray-800">
+			{title}
+		</div>
+		<p className="font-bold text-base text-gray-700 mb-5 ">
+			{organization}
+		</p>
+	</div>
+);
+
 const Education = () => {
 	return (
-		<div className="mx-4">
-			<h2 className="text-5xl mb-11">Education</h2>
-			{titles.map(title => (
-				<EducationItem
-					title={title.title}
-					organization={title.organization}
-				/>
-			))}
-		</div>
+		<SectionContainer>
+			<div className=" px-5 py-8">
+				<h2 className="text-4xl mb-11 text-center">Education</h2>
+				<div className="grid lg:grid-cols-2 gap-5">
+					{titles.map(title => (
+						<div className="p-5 bg-gray-50  rounded-lg flex flex-col gap-5">
+							<EducationItem
+								title={title.title}
+								organization={title.organization}
+							/>
+						</div>
+					))}
+				</div>
+			</div>
+		</SectionContainer>
 	);
 };
 

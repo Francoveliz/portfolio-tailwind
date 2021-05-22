@@ -10,7 +10,8 @@ import {
 	TailwindIcon,
 	CheckIcon,
 } from "../../assets/icons";
-import { SkillIcon } from "../../components";
+import { SkillsIlustration } from "../../assets/ilustrations";
+import { SkillIcon, SectionContainer } from "../../components";
 
 const technologyIcons = [
 	{
@@ -49,34 +50,28 @@ const technologyIcons = [
 
 const Skills = () => {
 	return (
-		<div className="mx-4 mb-12">
-			<h2 className="text-5xl mb-11 ">Skills</h2>
-			<div className="flex gap-5 overflow-x-auto pb-4  custom-scrollbar slider ">
-				<div className="slide-track ">
-					{technologyIcons.map(Icon => (
-						<div className="slide">
-							<SkillIcon IconComponent={Icon.component} name={Icon.name} />
+		<SectionContainer>
+			<div className="grid lg:grid-cols-2  gap-16 px-6 py-10">
+				<div className="text-purple-600 w-full lg:pl-0 lg:pr-12 p-3">
+					<SkillsIlustration />
+				</div>
+				<div className="flex flex-col items-center justify-center">
+					<h2 className="text-4xl mb-11 text-center">Skills</h2>
+					<div className="flex gap-5">
+						<div className="grid grid-cols-2 lg:grid-cols-4 gap-10 mx-auto">
+							{technologyIcons.map(Icon => (
+								<div className="bg-white w-20 h-20 p-5 rounded-full flex justify-center items-center shadow">
+									<SkillIcon
+										IconComponent={Icon.component}
+										name={Icon.name}
+									/>
+								</div>
+							))}
 						</div>
-					))}
-					{technologyIcons.map(Icon => (
-						<div className="slide">
-							<SkillIcon IconComponent={Icon.component} name={Icon.name} />
-						</div>
-					))}
+					</div>
 				</div>
 			</div>
-			<div>
-				{technologyIcons.map(icon => (
-					<p className="flex items-center">
-						<div className="text-gray-50 w-4 mr-3 ">
-							<CheckIcon />
-						</div>
-
-						<p>{icon.name}</p>
-					</p>
-				))}
-			</div>
-		</div>
+		</SectionContainer>
 	);
 };
 
