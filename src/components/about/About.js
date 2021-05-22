@@ -40,7 +40,7 @@ const About = () => {
 				<div className=" container  flex flex-col gap-12 lg:flex-row  lg:items-center  lg:pt-32">
 					<div className="flex flex-col  ">
 						<p className="text-4xl uppercase font-bold tracking-tight mb-4">
-							¡Hola! Soy Franco Veliz
+							¡Hola! Soy <p> Franco Veliz</p>
 						</p>
 						<p className="text-2xl font-semibold mb-10 lg:mb-16">
 							Desarrollador Front End
