@@ -43,13 +43,13 @@ const About = () => {
 							¡Hola! Soy Franco Veliz
 						</p>
 						<p className="text-3xl font-semibold mb-10 lg:mb-16">
-							Desarrollador Front End
+							Desarrollador Front End #React
 						</p>
 						<div className="">
 							<PrimaryButton>Download CV</PrimaryButton>
 						</div>
 					</div>
-					<div className="w-full text-blue-400 flex-grow lg:w-8/12 ">
+					<div className=" text-blue-400 flex-grow w-full lg:w-8/12 ">
 						<ProfileIlustration />
 					</div>
 				</div>
