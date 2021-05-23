@@ -37,19 +37,19 @@ const About = () => {
 	return (
 		<div>
 			<div className=" bg-blue-500 text-white flex pt-10 lg:pt-0">
-				<div className=" container  flex flex-col gap-12 lg:flex-row  lg:items-center  lg:pt-32">
-					<div className="flex flex-col  ">
-						<p className="text-4xl uppercase font-bold tracking-tight mb-4">
-							¡Hola! Soy <p> Franco Veliz</p>
+				<div className=" container  flex flex-col gap-12 lg:flex-row  lg:items-center lg:pt-32">
+					<div className="flex flex-col lg:w-7/12">
+						<p className="text-6xl uppercase font-bold tracking-tight mb-4 ">
+							¡Hola! Soy Franco Veliz
 						</p>
-						<p className="text-2xl font-semibold mb-10 lg:mb-16">
+						<p className="text-3xl font-semibold mb-10 lg:mb-16">
 							Desarrollador Front End
 						</p>
 						<div className="">
 							<PrimaryButton>Download CV</PrimaryButton>
 						</div>
 					</div>
-					<div className="w-full text-blue-400 flex-grow ">
+					<div className="w-full text-blue-400 flex-grow lg:w-8/12 ">
 						<ProfileIlustration />
 					</div>
 				</div>
