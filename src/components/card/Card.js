@@ -9,9 +9,11 @@ const Card = ({ name, description, demoLink, codeLink, tags, img }) => {
 			<div>
 				<img className="rounded-lg" src={img} alt={name} />
 			</div>
-			<div className="text-gray-900 font-semibold flex flex-wrap gap-3">
+			<div className="text-gray-900 font-semibold flex flex-wrap gap-3 w-full">
 				{tags.map(tech => (
-					<span className=" py-1 px-2 rounded-lg shadow-sm  hover:text-purple-700">{`#${tech}`}</span>
+					<div className=" py-1 px-2 rounded-lg shadow-sm hover:text-blue-400">
+						<p className="inline">{`#${tech}`}</p>
+					</div>
 				))}
 			</div>
 			<div className=" flex flex-col gap-5">
