@@ -25,8 +25,10 @@ export const projectsData = [
 		name: "Huddle landing page",
 		description:
 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsum corporis molestias quaerat accusantium, officia, voluptas odio illo quia aut necessitatibus explicabo",
-		demoLink: "https://todo-list-fv.netlify.app/",
-		codeLink: "https://github.com/Francoveliz/todo-list-react",
+		demoLink:
+			"https://fylo-landing-page-with-two-column-layout-fv.netlify.app/",
+		codeLink:
+			"https://github.com/Francoveliz/Fylo-landing-page-with-two-column-layout",
 		tags: ["HTML", "CSS"],
 	},
 ];
