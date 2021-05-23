@@ -1,10 +1,14 @@
 import React from "react";
-import { Card } from "../";
+import { Card, SectionTitle } from "../";
 import { projectsData } from "../../assets/utils/content";
+import { PcIcon } from "../../assets/icons";
 
 const Portfolio = () => {
 	return (
-		<div className=" py-10 container">
+		<div className="py-10 container">
+			<div className="text-blue-400 mb-10">
+				<SectionTitle text="Projects" Svg={PcIcon} />
+			</div>
 			<div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-5 mx-auto flex-wrap ">
 				{projectsData.map(project => (
 					<Card {...project} />

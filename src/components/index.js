@@ -19,3 +19,5 @@ export { default as SectionContainer } from "./section-container/SectionContaine
 export { default as OutlinedButton } from "./outlined-button/OutlinedButton";
 
 export { default as SkillIcon } from "./skill-icon/SkillIcon";
+
+export { default as SectionTitle } from "./section-title/SectionTitle";

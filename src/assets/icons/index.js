@@ -25,3 +25,7 @@ export { default as LocationIcon } from "./LocationIcon";
 export { default as EmailIcon } from "./EmailIcon";
 
 export { default as CheckIcon } from "./CheckIcon";
+
+export { default as PcIcon } from "./PcIcon";
+
+export { default as SkillsIcon } from "./SkillsIcon";

@@ -8,10 +8,10 @@ import {
 	GitIcon,
 	BootstrapIcon,
 	TailwindIcon,
-	CheckIcon,
+	SkillsIcon,
 } from "../../assets/icons";
 import { SkillsIlustration } from "../../assets/ilustrations";
-import { SkillIcon, SectionContainer } from "../../components";
+import { SkillIcon, SectionTitle } from "../../components";
 
 const technologyIcons = [
 	{
@@ -55,9 +55,11 @@ const Skills = () => {
 				<SkillsIlustration />
 			</div>
 			<div className="flex flex-col items-center justify-center">
-				<h2 className="text-4xl mb-11 text-center">Skills</h2>
+				<div className="text-blue-400 ml-0 mr-auto mb-12">
+					<SectionTitle text="Skills" Svg={SkillsIcon} />
+				</div>
 				<div className="flex gap-5">
-					<div className="grid grid-cols-2 lg:grid-cols-4 wrap gap-10 mx-auto">
+					<div className="flex flex-wrap gap-10 mx-auto">
 						{technologyIcons.map(Icon => (
 							<div className="bg-white w-20 h-20 p-5 rounded-full flex justify-center items-center shadow">
 								<SkillIcon
