@@ -50,25 +50,20 @@ const technologyIcons = [
 
 const Skills = () => {
 	return (
-		<div className="grid lg:grid-cols-2 gap-16  py-10 container">
-			<div className="text-blue-400 w-full lg:pl-0 lg:pr-12 p-3">
+		<div className="grid grid-cols-1 lg:grid-cols-2  py-10 container">
+			<div className="lg:col-start-1 lg:row-start-2 text-blue-400 w-full lg:pl-0 lg:pr-12 mb-20 lg:mb-0  ">
 				<SkillsIlustration />
 			</div>
-			<div className="flex flex-col items-center justify-center">
-				<div className="text-blue-400 ml-0 mr-auto mb-12">
-					<SectionTitle text="Skills" Svg={SkillsIcon} />
-				</div>
-				<div className="flex gap-5">
-					<div className="flex flex-wrap gap-10 mx-auto">
-						{technologyIcons.map(Icon => (
-							<div className="bg-white w-20 h-20 p-5 rounded-full flex justify-center items-center shadow">
-								<SkillIcon
-									IconComponent={Icon.component}
-									name={Icon.name}
-								/>
-							</div>
-						))}
-					</div>
+			<div className=" col-span-2 text-blue-400 ml-0 mr-auto mb-12">
+				<SectionTitle text="Skills" Svg={SkillsIcon} />
+			</div>
+			<div className="lg:col-start-2  flex flex-col items-center justify-center">
+				<div className="flex flex-wrap gap-10 mx-auto">
+					{technologyIcons.map(Icon => (
+						<div className="bg-white w-20 h-20 p-5 rounded-full flex justify-center items-center shadow">
+							<SkillIcon IconComponent={Icon.component} name={Icon.name} />
+						</div>
+					))}
 				</div>
 			</div>
 		</div>
