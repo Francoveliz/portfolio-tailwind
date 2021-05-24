@@ -18,9 +18,9 @@ const Navbar = () => {
 	};
 
 	const menuData = [
-		{ text: "projects", link: "#projects" },
+		{ text: "proyectos", link: "#projects" },
 		{ text: "skills", link: "#skills" },
-		{ text: "education", link: "#education" },
+		{ text: "educación", link: "#education" },
 	];
 
 	return (

@@ -9,6 +9,7 @@ import {
 import { ProfileIlustration } from "../../assets/ilustrations";
 import { PrimaryButton, SectionContainer } from "../../components";
 import { Wave } from "../../assets/svg";
+import { pdfLink } from "../../assets/utils/content";
 
 const socialMedia = [
 	{
@@ -45,8 +46,10 @@ const About = () => {
 						<p className="text-3xl font-semibold mb-10 lg:mb-16">
 							Desarrollador Front End #React
 						</p>
-						<div className="">
-							<PrimaryButton>Download CV</PrimaryButton>
+						<div className="mb-16 lg:mb-0">
+							<a href={pdfLink} target="_blank" rel="noopener noreferrer">
+								<PrimaryButton>Download CV</PrimaryButton>
+							</a>
 						</div>
 					</div>
 					<div className=" text-blue-400 flex-grow w-full lg:w-8/12 ">
