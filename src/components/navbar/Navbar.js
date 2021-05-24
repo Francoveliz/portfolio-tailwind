@@ -9,7 +9,9 @@ const Navbar = () => {
 
 	const LinkComponent = ({ text, link }) => {
 		return (
-			<a href={link} className="block mt-4 lg:inline-block lg:mt-0 mr-4">
+			<a
+				href={link}
+				className="block mt-4 lg:inline-block lg:mt-0 lg:py-1 lg:px-3">
 				{text}
 			</a>
 		);
@@ -46,7 +48,7 @@ const Navbar = () => {
 					className={`w-screen  flex-grow px-4 absolute top-16 left-0 pb-5 ${menuIsOpen} lg:pb-0 lg:static lg:w-auto lg:flex lg:items-center bg-blue-500 shadow-xl lg:shadow-none`}>
 					<div className=" gap-8 font-semibold  lg:flex-grow capitalize ml-auto mr-0 lg:flex lg:justify-end ">
 						{menuData.map(data => (
-							<div className="hover:shadow lg:py-1 lg:px-3 lg:text-center">
+							<div className="hover:shadow  lg:text-center">
 								<LinkComponent text={data.text} link={data.link} />
 							</div>
 						))}
