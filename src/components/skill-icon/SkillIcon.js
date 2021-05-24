@@ -1,8 +1,8 @@
 import React from "react";
 
-const SkillIcon = ({ name, IconComponent }) => {
+const SkillIcon = ({ IconComponent }) => {
 	return (
-		<div className="w-full">
+		<div className="w-full ">
 			<IconComponent />
 		</div>
 	);

@@ -9,7 +9,7 @@ const Card = ({ name, description, demoLink, codeLink, tags, img }) => {
 			<div>
 				<img className="rounded-lg" src={img} alt={name} />
 			</div>
-			<div className="text-gray-900 font-semibold flex flex-wrap gap-3 w-full">
+			<div className="text-gray-600 font-semibold flex flex-wrap gap-3 w-full">
 				{tags.map(tech => (
 					<div className=" py-1 px-2 rounded-lg shadow-sm hover:text-blue-400">
 						<p className="inline">{`#${tech}`}</p>
@@ -20,7 +20,7 @@ const Card = ({ name, description, demoLink, codeLink, tags, img }) => {
 				<h3 className="text-gray-700 text-xl font-extrabold text-md capitalize">
 					{name}
 				</h3>
-				<p className="text-sm text-gray-900 ">{description}</p>
+				<p className="text-sm text-gray-600 ">{description}</p>
 			</div>
 			<div className="flex gap-2 ">
 				<a href={codeLink} target="_blank" rel="noopener noreferrer">

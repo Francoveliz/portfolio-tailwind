@@ -24,7 +24,7 @@ const Navbar = () => {
 	];
 
 	return (
-		<nav className="lg:absolute w-screen bg-blue-500 text-white py-4 ">
+		<nav className="lg:absolute w-full bg-blue-500 text-white py-4 ">
 			<div className=" container flex items-center justify-between flex-wrap lg:relative ">
 				<div className="flex justify-between w-full lg:w-auto w-10 ">
 					<div className="flex items-center flex-shrink-0 mr-6">

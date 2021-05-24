@@ -3,7 +3,7 @@ import React from "react";
 const OutlinedButton = ({ children, ...rest }) => {
 	return (
 		<button
-			className="h-10 px-7 text-gray-900 transition-colors duration-150 border border-gray-900 rounded-lg hover:border-purple-600 hover:text-purple-600"
+			className="shadow-sm h-10 px-7 text-blue-400 bg-white rounded-lg ring-2 ring-blue-400 hover:shadow-lg ring-inset  font-semibold"
 			{...rest}>
 			{children}
 		</button>

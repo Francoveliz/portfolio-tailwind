@@ -2,20 +2,20 @@ import { todoListImg, countriesApiImg, fyloImg } from "../images";
 
 export const projectsData = [
 	{
-		img: todoListImg,
+		img: countriesApiImg,
 		name: "Rest countries api",
 		description:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsum corporis molestias quaerat accusantium, officia, voluptas odio illo quia aut necessitatibus explicabo ",
+			'Integración de la api "REST countries", en la cual se muestran en pantalla todos los países y la posibilidad de acceder a información detallada de cada país.',
 		demoLink: "https://react-rest-country-api.netlify.app/",
 		codeLink:
 			"https://github.com/Francoveliz/REST-Countries-API-with-color-theme-switcher",
 		tags: ["React", "Material UI", "Styled components"],
 	},
 	{
-		img: countriesApiImg,
+		img: todoListImg,
 		name: "Todo list app",
 		description:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsum corporis molestias quaerat accusantium, officia, voluptas odio illo quia aut necessitatibus explicabo",
+			"Clásica todo app, la cual te permite, agregar tareas, eliminar tareas, marcarlas como completadas, y filtrarlas según se desee.",
 		demoLink: "https://todo-list-fv.netlify.app/",
 		codeLink: "https://github.com/Francoveliz/todo-list-react",
 		tags: ["React", "Material UI", "SCSS"],
@@ -24,7 +24,7 @@ export const projectsData = [
 		img: fyloImg,
 		name: "Huddle landing page",
 		description:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsum corporis molestias quaerat accusantium, officia, voluptas odio illo quia aut necessitatibus explicabo",
+			"Landing page de una empresa ficticia, maquetada con CSS.",
 		demoLink:
 			"https://fylo-landing-page-with-two-column-layout-fv.netlify.app/",
 		codeLink:

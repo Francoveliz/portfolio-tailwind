@@ -7,11 +7,11 @@ import {
 	EmailIcon,
 } from "../../assets/icons";
 import { ProfileIlustration } from "../../assets/ilustrations";
-import { PrimaryButton, SectionContainer } from "../../components";
+import { OutlinedButton } from "../../components";
 import { Wave } from "../../assets/svg";
 import { pdfLink } from "../../assets/utils/content";
 
-const socialMedia = [
+const socialMediaData = [
 	{
 		component: LinkedinIcon,
 		link: "https://www.linkedin.com/in/francoveliz/",
@@ -26,9 +26,9 @@ const socialMedia = [
 	},
 ];
 
-const SocialMediaIcons = ({ Component, link }) => (
+const SocialMediaIcon = ({ Component, link }) => (
 	<a href={link} target="_blank" rel="noopener noreferrer">
-		<div className="w-12 bg-gray-800 hover:bg-purple-600 p-3 rounded-full flex justify-center justify-items-center">
+		<div className="w-12 p-3 rounded-full border hover:shadow-lg">
 			<Component />
 		</div>
 	</a>
@@ -37,18 +37,26 @@ const SocialMediaIcons = ({ Component, link }) => (
 const About = () => {
 	return (
 		<div>
-			<div className=" bg-blue-500 text-white flex pt-16 lg:pt-0">
+			<div className=" bg-blue-500 text-white flex pt-16 lg:pt-10 ">
 				<div className=" container  flex flex-col gap-12 lg:flex-row  lg:items-center lg:pt-32">
 					<div className="flex flex-col lg:w-7/12">
-						<p className="text-6xl uppercase font-bold tracking-tight mb-4 ">
+						<p className="text-6xl uppercase font-bold tracking-tight mb-6 ">
 							¡Hola! Soy Franco Veliz
 						</p>
-						<p className="text-3xl font-semibold mb-16">
+						<p className="text-3xl font-semibold mb-8">
 							Desarrollador Front End #React
 						</p>
+						<div className="flex gap-6 mb-14">
+							{socialMediaData.map(socialMedia => (
+								<SocialMediaIcon
+									Component={socialMedia.component}
+									link={socialMedia.link}
+								/>
+							))}
+						</div>
 						<div className="mb-16 lg:mb-0">
 							<a href={pdfLink} target="_blank" rel="noopener noreferrer">
-								<PrimaryButton>Download CV</PrimaryButton>
+								<OutlinedButton>Download CV</OutlinedButton>
 							</a>
 						</div>
 					</div>
@@ -57,7 +65,7 @@ const About = () => {
 					</div>
 				</div>
 			</div>
-			<div className="text-blue-500">
+			<div className="text-blue-500 -mb-28">
 				<Wave />
 			</div>
 		</div>

@@ -59,8 +59,8 @@ const Skills = () => {
 			<div className="lg:col-start-2  flex flex-col items-center justify-center">
 				<div className="flex flex-wrap gap-10 mx-auto">
 					{technologyIcons.map(Icon => (
-						<div className="bg-white w-20 h-20 p-5 rounded-full flex justify-center items-center shadow">
-							<SkillIcon IconComponent={Icon.component} name={Icon.name} />
+						<div className="bg-white w-20 h-20 p-5 rounded-full flex justify-center items-center shadow hover:shadow-lg">
+							<SkillIcon IconComponent={Icon.component} />
 						</div>
 					))}
 				</div>

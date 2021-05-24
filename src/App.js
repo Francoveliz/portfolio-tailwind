@@ -4,7 +4,7 @@ import { backgroundColor } from "./assets/utils/theme";
 function App() {
 	return (
 		<div
-			className={`min-h-screen text-gray-900 font-sans ${backgroundColor}`}>
+			className={`min-h-screen text-gray-600 font-sans ${backgroundColor}`}>
 			<Navbar />
 			<div className="flex flex-col pb-60 gap-20 ">
 				<About />
