@@ -50,11 +50,13 @@ const technologyIcons = [
 
 const Skills = () => {
 	return (
-		<div className="grid grid-cols-1 lg:grid-cols-2  py-10 container">
-			<div className="lg:col-start-1 lg:row-start-2 text-blue-400 w-full lg:pl-0 lg:pr-12 mb-20 lg:mb-0  ">
+		<div
+			id="skills"
+			className="grid grid-cols-1 lg:grid-cols-2  py-10 container">
+			<div className="lg:col-start-1 lg:row-start-2 text-blue-400 w-full lg:pl-0 lg:pr-12 mb-20 lg:mb-0 ">
 				<SkillsIlustration />
 			</div>
-			<div className=" col-span-2 text-blue-400 ml-0 mr-auto mb-12">
+			<div className=" col-span-2 text-blue-400 ml-0 mr-auto mb-10">
 				<SectionTitle text="Skills" Svg={SkillsIcon} />
 			</div>
 			<div className="lg:col-start-2  flex flex-col items-center justify-center">

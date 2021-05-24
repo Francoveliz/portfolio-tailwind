@@ -1,7 +1,7 @@
 import React from "react";
 
-import { SectionContainer } from "../";
-import { primaryColor } from "../../assets/utils/theme";
+import { SectionTitle } from "../../components";
+import { EducationIcon } from "../../assets/icons";
 
 const titles = [
 	{
@@ -28,7 +28,8 @@ const titles = [
 
 const EducationItem = ({ title, organization }) => (
 	<div className="">
-		<div className={`font-extrabold text-2xl mb-3 uppercase `}>
+		<div
+			className={`font-extrabold text-2xl mb-3 capitalize text-blue-400`}>
 			{title}
 		</div>
 		<p className="font-bold text-base  mb-5 ">{organization}</p>
@@ -37,11 +38,13 @@ const EducationItem = ({ title, organization }) => (
 
 const Education = () => {
 	return (
-		<div className=" py-8 flex flex-col gap-6 container">
-			<h2 className={`text-4xl text-center `}>Education</h2>
+		<div id="education" className=" py-10 flex flex-col gap-6 container">
+			<div className="text-blue-400 mb-10">
+				<SectionTitle Svg={EducationIcon} text="Educación" />
+			</div>
 			<div className="grid lg:grid-cols-2 gap-5">
 				{titles.map(title => (
-					<div className="p-5 rounded-lg flex flex-col gap-5 shadow">
+					<div className="p-5 rounded-lg flex flex-col gap-5 shadow bg-white">
 						<EducationItem
 							title={title.title}
 							organization={title.organization}

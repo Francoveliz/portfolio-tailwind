@@ -36,7 +36,7 @@ const SocialMediaIcons = ({ Component, link }) => (
 const About = () => {
 	return (
 		<div>
-			<div className=" bg-blue-500 text-white flex pt-10 lg:pt-0">
+			<div className=" bg-blue-500 text-white flex ">
 				<div className=" container  flex flex-col gap-12 lg:flex-row  lg:items-center lg:pt-32">
 					<div className="flex flex-col lg:w-7/12">
 						<p className="text-6xl uppercase font-bold tracking-tight mb-4 ">

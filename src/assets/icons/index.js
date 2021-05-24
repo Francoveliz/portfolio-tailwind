@@ -29,3 +29,5 @@ export { default as CheckIcon } from "./CheckIcon";
 export { default as PcIcon } from "./PcIcon";
 
 export { default as SkillsIcon } from "./SkillsIcon";
+
+export { default as EducationIcon } from "./EducationIcon";

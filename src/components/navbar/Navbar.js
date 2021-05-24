@@ -1,6 +1,5 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
-import { Container } from "../../components";
+import { ReactIcon } from "../../assets/icons";
 
 const Navbar = () => {
 	const [menuIsOpen, setMenuIsOpen] = useState("hidden");
@@ -8,17 +7,31 @@ const Navbar = () => {
 	const handleMenuOpen = () =>
 		menuIsOpen === "" ? setMenuIsOpen("hidden") : setMenuIsOpen("");
 
+	const LinkComponent = ({ text, link }) => {
+		return (
+			<a href={link} className="block mt-4 lg:inline-block lg:mt-0 mr-4">
+				{text}
+			</a>
+		);
+	};
+
+	const menuData = [
+		{ text: "projects", link: "#projects" },
+		{ text: "skills", link: "#skills" },
+		{ text: "education", link: "#education" },
+	];
+
 	return (
-		<nav className="lg:absolute w-screen bg-blue-500 text-white py-4">
+		<nav className="lg:absolute w-screen bg-blue-500 text-white py-4 ">
 			<div className=" container flex items-center justify-between flex-wrap lg:relative ">
-				<div className="flex justify-between w-full lg:w-auto w-10">
+				<div className="flex justify-between w-full lg:w-auto w-10 ">
 					<div className="flex items-center flex-shrink-0 mr-6">
 						<span className="font-semibold text-xl tracking-tight">
-							Franco Veliz
+							FV
 						</span>
 					</div>
 					<div className="block lg:hidden " onClick={handleMenuOpen}>
-						<button className="flex items-center px-3 py-2 border rounded  border-gray-600  hover:border-gray-200">
+						<button className="flex items-center px-3 py-2 border rounded border-white">
 							<svg
 								className="fill-current h-3 w-3"
 								viewBox="0 0 20 20"
@@ -30,23 +43,13 @@ const Navbar = () => {
 					</div>
 				</div>
 				<div
-					className={`w-screen  flex-grow px-4 absolute top-16 left-0 pb-5 ${menuIsOpen} lg:pb-0 lg:static lg:w-auto lg:flex lg:items-center`}>
-					<div className="text-sm lg:flex-grow">
-						<a
-							href="#"
-							className="block mt-4 lg:inline-block lg:mt-0   mr-4">
-							Docs
-						</a>
-						<a
-							href="#"
-							className="block mt-4 lg:inline-block lg:mt-0   mr-4">
-							Docs
-						</a>
-						<a
-							href="#"
-							className="block mt-4 lg:inline-block lg:mt-0   mr-4">
-							Docs
-						</a>
+					className={`w-screen  flex-grow px-4 absolute top-16 left-0 pb-5 ${menuIsOpen} lg:pb-0 lg:static lg:w-auto lg:flex lg:items-center bg-blue-500 shadow-xl lg:shadow-none`}>
+					<div className=" gap-8 font-semibold  lg:flex-grow capitalize ml-auto mr-0 lg:flex lg:justify-end ">
+						{menuData.map(data => (
+							<div className="hover:shadow lg:py-1 lg:px-3 lg:text-center">
+								<LinkComponent text={data.text} link={data.link} />
+							</div>
+						))}
 					</div>
 				</div>
 			</div>

@@ -6,7 +6,7 @@ function App() {
 		<div
 			className={`min-h-screen text-gray-900 font-sans ${backgroundColor}`}>
 			<Navbar />
-			<div className="flex flex-col pb-60 ">
+			<div className="flex flex-col pb-60 gap-20">
 				<About />
 				<Portfolio />
 				<Skills />
