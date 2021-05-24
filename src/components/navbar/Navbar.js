@@ -45,8 +45,8 @@ const Navbar = () => {
 					</div>
 				</div>
 				<div
-					className={`w-screen  flex-grow px-4 absolute top-16 left-0 pb-5 ${menuIsOpen} lg:pb-0 lg:static lg:w-auto lg:flex lg:items-center bg-blue-500 shadow-xl lg:shadow-none`}>
-					<div className=" gap-8 font-semibold  lg:flex-grow capitalize ml-auto mr-0 lg:flex lg:justify-end ">
+					className={`w-screen flex-grow absolute top-16 left-0 pb-5 ${menuIsOpen} lg:pb-0 lg:static lg:w-auto lg:flex lg:items-center bg-blue-500 shadow-xl lg:shadow-none `}>
+					<div className=" gap-8 font-semibold  lg:flex-grow capitalize  lg:flex lg:justify-end container ">
 						{menuData.map(data => (
 							<div className="hover:shadow  lg:text-center">
 								<LinkComponent text={data.text} link={data.link} />
