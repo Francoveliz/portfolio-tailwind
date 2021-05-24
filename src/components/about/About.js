@@ -43,7 +43,7 @@ const About = () => {
 						<p className="text-6xl uppercase font-bold tracking-tight mb-4 ">
 							¡Hola! Soy Franco Veliz
 						</p>
-						<p className="text-3xl font-semibold mb-10 lg:mb-16">
+						<p className="text-3xl font-semibold mb-16">
 							Desarrollador Front End #React
 						</p>
 						<div className="mb-16 lg:mb-0">
