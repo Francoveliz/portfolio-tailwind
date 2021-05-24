@@ -11,7 +11,7 @@ const Navbar = () => {
 		return (
 			<a
 				href={link}
-				className="block mt-4 lg:inline-block lg:mt-0 lg:py-1 lg:px-3">
+				className="block my-10 lg:my-0 lg:inline-block lg:mt-0 lg:py-1 lg:px-3">
 				{text}
 			</a>
 		);
@@ -45,7 +45,7 @@ const Navbar = () => {
 					</div>
 				</div>
 				<div
-					className={`w-screen flex-grow absolute top-16 left-0 pb-5 ${menuIsOpen} lg:pb-0 lg:static lg:w-auto lg:flex lg:items-center bg-blue-500 shadow-xl lg:shadow-none `}>
+					className={`w-screen flex-grow absolute top-16 left-0 ${menuIsOpen} lg:pb-0 lg:static lg:w-auto lg:flex lg:items-center bg-blue-500 shadow-xl lg:shadow-none `}>
 					<div className=" gap-8 font-semibold  lg:flex-grow capitalize  lg:flex lg:justify-end container ">
 						{menuData.map(data => (
 							<div className="hover:shadow  lg:text-center">
