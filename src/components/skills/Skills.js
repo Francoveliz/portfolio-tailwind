@@ -52,10 +52,7 @@ const Skills = () => {
 	return (
 		<div
 			id="skills"
-			className="grid grid-cols-1 lg:grid-cols-2  py-10 container">
-			<div className="lg:col-start-1 lg:row-start-2 text-blue-400 w-full lg:pl-0 lg:pr-12 mb-20 lg:mb-0 ">
-				<SkillsIlustration />
-			</div>
+			className="lg:grid flex flex-col grid-cols-1 lg:grid-cols-2 py-10 container ">
 			<div className=" col-span-2 text-blue-400 ml-0 mr-auto mb-10">
 				<SectionTitle text="Skills" Svg={SkillsIcon} />
 			</div>
@@ -67,6 +64,9 @@ const Skills = () => {
 						</div>
 					))}
 				</div>
+			</div>
+			<div className=" hidden lg:block lg:col-start-1 lg:row-start-2 text-blue-400 w-full lg:pl-0 lg:pr-12 ">
+				<SkillsIlustration />
 			</div>
 		</div>
 	);
