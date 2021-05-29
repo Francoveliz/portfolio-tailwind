@@ -5,7 +5,7 @@ import { PcIcon } from "../../assets/icons";
 
 const Portfolio = () => {
 	return (
-		<div id="projects" className="py-10 container">
+		<section id="projects" className="py-10 container">
 			<div className="text-blue-400 mb-10">
 				<SectionTitle text="Proyectos" Svg={PcIcon} />
 			</div>
@@ -14,7 +14,7 @@ const Portfolio = () => {
 					<Card {...project} />
 				))}
 			</div>
-		</div>
+		</section>
 	);
 };
 

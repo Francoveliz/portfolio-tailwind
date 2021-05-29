@@ -50,7 +50,7 @@ const technologyIcons = [
 
 const Skills = () => {
 	return (
-		<div
+		<section
 			id="skills"
 			className="lg:grid flex flex-col grid-cols-1 lg:grid-cols-2 py-10 container ">
 			<div className=" col-span-2 text-blue-400 ml-0 mr-auto mb-10">
@@ -68,7 +68,7 @@ const Skills = () => {
 			<div className=" hidden lg:block lg:col-start-1 lg:row-start-2 text-blue-400 w-full lg:pl-0 lg:pr-12 ">
 				<SkillsIlustration />
 			</div>
-		</div>
+		</section>
 	);
 };
 

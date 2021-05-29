@@ -21,3 +21,7 @@ export { default as OutlinedButton } from "./outlined-button/OutlinedButton";
 export { default as SkillIcon } from "./skill-icon/SkillIcon";
 
 export { default as SectionTitle } from "./section-title/SectionTitle";
+
+export { default as LinkBlank } from "./link-blank/LinkBlank";
+
+export { default as EducationItem } from "./education-item/EduactionItem";

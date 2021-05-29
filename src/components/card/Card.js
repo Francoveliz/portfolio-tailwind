@@ -1,11 +1,11 @@
 import React from "react";
-import { PrimaryButton, OutlinedButton } from "../";
+import { PrimaryButton, OutlinedButton, LinkBlank } from "../";
 
 const techStack = ["react", "redux", "html"];
 
 const Card = ({ name, description, demoLink, codeLink, tags, img }) => {
 	return (
-		<div className="p-5 rounded-lg overflow-hidden flex flex-col gap-5 shadow justify-between">
+		<article className="p-5 rounded-lg overflow-hidden flex flex-col gap-5 shadow justify-between">
 			<div>
 				<img className="rounded-lg" src={img} alt={name} />
 			</div>
@@ -23,14 +23,14 @@ const Card = ({ name, description, demoLink, codeLink, tags, img }) => {
 				<p className="text-sm text-gray-600 ">{description}</p>
 			</div>
 			<div className="flex gap-2 ">
-				<a href={codeLink} target="_blank" rel="noopener noreferrer">
+				<LinkBlank link={codeLink}>
 					<OutlinedButton>Code</OutlinedButton>
-				</a>
-				<a href={demoLink} target="_blank" rel="noopener noreferrer">
+				</LinkBlank>
+				<LinkBlank link={demoLink}>
 					<PrimaryButton>Demo</PrimaryButton>
-				</a>
+				</LinkBlank>
 			</div>
-		</div>
+		</article>
 	);
 };
 
