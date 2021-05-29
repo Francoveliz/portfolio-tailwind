@@ -8,8 +8,8 @@
       "type": "image/x-icon"
     },
     {
-      "src": "profile.jpg",
-      "type": "image/jpg",
+      "src": "profile.png",
+      "type": "image/png",
       "sizes": "192x192"
     }
   ],
