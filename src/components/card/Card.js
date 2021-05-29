@@ -5,9 +5,15 @@ const techStack = ["react", "redux", "html"];
 
 const Card = ({ name, description, demoLink, codeLink, tags, img }) => {
 	return (
-		<article className="p-5 rounded-lg overflow-hidden flex flex-col gap-5 shadow justify-between">
+		<article className="p-5 rounded-lg overflow-hidden flex flex-col gap-5 shadow ">
 			<div>
 				<img className="rounded-lg" src={img} alt={name} />
+			</div>
+			<h3 className="text-gray-700 text-xl font-extrabold text-md capitalize ">
+				{name}
+			</h3>
+			<div className=" flex flex-col gap-5">
+				<p className="text-sm text-gray-600 ">{description}</p>
 			</div>
 			<div className="text-gray-600 font-semibold flex flex-wrap gap-3 w-full">
 				{tags.map(tech => (
@@ -16,13 +22,7 @@ const Card = ({ name, description, demoLink, codeLink, tags, img }) => {
 					</div>
 				))}
 			</div>
-			<div className=" flex flex-col gap-5">
-				<h3 className="text-gray-700 text-xl font-extrabold text-md capitalize">
-					{name}
-				</h3>
-				<p className="text-sm text-gray-600 ">{description}</p>
-			</div>
-			<div className="flex gap-2 ">
+			<div className="flex gap-2 mb-0 mt-auto">
 				<LinkBlank link={codeLink}>
 					<OutlinedButton>Code</OutlinedButton>
 				</LinkBlank>
