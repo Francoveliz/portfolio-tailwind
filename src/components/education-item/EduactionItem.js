@@ -2,8 +2,6 @@ import React from "react";
 import { LinkBlank } from "../../components";
 
 const EduactionItem = ({ title, organization, certificate, overview }) => {
-	console.log(typeof overview);
-	console.log(overview);
 	return (
 		<article>
 			<div
