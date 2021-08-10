@@ -34,7 +34,7 @@ export const projectsData = [
 ];
 
 export const pdfLink =
-	"https://drive.google.com/file/d/1BVUt_WlCO8f2a7gOJqGUdV_qVIvx8UMo/view?usp=sharing";
+	"https://drive.google.com/file/d/1rGfgsVU6VvlN3SJ3OPkrqMImFP-jsmxf/view?usp=sharing";
 
 export const degrees = [
 	{
