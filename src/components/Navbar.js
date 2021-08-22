@@ -21,6 +21,7 @@ const Navbar = () => {
 		{ text: "proyectos", link: "#projects" },
 		{ text: "skills", link: "#skills" },
 		{ text: "educación", link: "#education" },
+		{ text: "inglés", link: "#inglés" },
 	];
 
 	return (

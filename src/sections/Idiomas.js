@@ -6,7 +6,7 @@ import LinkBlank from "../components/LinkBlank";
 
 const Idiomas = () => {
 	return (
-		<section id="projects" className="py-10 container">
+		<section id="inglés" className="py-10 container">
 			<div className="text-blue-400 mb-10">
 				<SectionTitle text="Inglés" Svg={EducationIcon} />
 			</div>
