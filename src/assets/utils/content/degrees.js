@@ -46,4 +46,10 @@ export const degrees = [
 			"https://www.freecodecamp.org/certification/francoveliz/front-end-libraries",
 		overview: ["React", "Bootstrap", "SASS"],
 	},
+	{
+		title: "Aceleración Alkemy - React",
+		organization: "Alkemy.org",
+		certificate: "",
+		overview: ["Redux", "Jira", "SCRUM"],
+	},
 ];

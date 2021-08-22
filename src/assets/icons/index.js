@@ -31,3 +31,5 @@ export { default as PcIcon } from "./PcIcon";
 export { default as SkillsIcon } from "./SkillsIcon";
 
 export { default as EducationIcon } from "./EducationIcon";
+
+export { default as ReduxIcon } from "./ReduxIcon";

@@ -9,6 +9,7 @@ import {
 	BootstrapIcon,
 	TailwindIcon,
 	SkillsIcon,
+	ReduxIcon,
 } from "../../assets/icons";
 import { SkillsIlustration } from "../../assets/ilustrations";
 import SkillIcon from "./SkillIcon";
@@ -46,6 +47,10 @@ const technologyIcons = [
 	{
 		component: TailwindIcon,
 		name: "Tailwind",
+	},
+	{
+		component: ReduxIcon,
+		name: "Redux",
 	},
 ];
 
