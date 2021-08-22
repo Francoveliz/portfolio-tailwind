@@ -1,7 +1,8 @@
 import React from "react";
-import { Card, SectionTitle } from "../";
-import { projectsData } from "../../assets/utils/content";
-import { PcIcon } from "../../assets/icons";
+import Card from "../components/Card";
+import SectionTitle from "../components/SectionTitle";
+import { projectsData } from "../assets/utils/content/projectsData";
+import { PcIcon } from "../assets/icons";
 
 const Portfolio = () => {
 	return (

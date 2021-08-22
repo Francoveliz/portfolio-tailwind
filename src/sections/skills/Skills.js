@@ -11,7 +11,8 @@ import {
 	SkillsIcon,
 } from "../../assets/icons";
 import { SkillsIlustration } from "../../assets/ilustrations";
-import { SkillIcon, SectionTitle } from "../../components";
+import SkillIcon from "./SkillIcon";
+import SectionTitle from "../../components/SectionTitle";
 
 const technologyIcons = [
 	{

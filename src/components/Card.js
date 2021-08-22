@@ -1,6 +1,7 @@
 import React from "react";
-import { PrimaryButton, OutlinedButton, LinkBlank } from "../";
-
+import LinkBlank from "./LinkBlank";
+import PrimaryButton from "./PrimaryButton";
+import OutlinedButton from "./OutlinedButton";
 const techStack = ["react", "redux", "html"];
 
 const Card = ({ name, description, demoLink, codeLink, tags, img }) => {

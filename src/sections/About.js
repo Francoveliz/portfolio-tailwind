@@ -4,11 +4,12 @@ import {
 	GithubIcon,
 	FreecodecampIcon,
 	EmailIcon,
-} from "../../assets/icons";
-import { ProfileIlustration } from "../../assets/ilustrations";
-import { OutlinedButton, LinkBlank } from "../../components";
-import { Wave } from "../../assets/svg";
-import { pdfLink } from "../../assets/utils/content";
+} from "../assets/icons";
+import { ProfileIlustration } from "../assets/ilustrations";
+import OutlinedButton from "../components/OutlinedButton";
+import LinkBlank from "../components/LinkBlank";
+import { Wave } from "../assets/svg";
+import { pdfLink } from "../assets/utils/content/pdfLink";
 
 const socialMediaData = [
 	{

@@ -1,7 +1,6 @@
-import React from "react";
-import { LinkBlank } from "../../components";
+import LinkBlank from "../../components/LinkBlank";
 
-const EduactionItem = ({ title, organization, certificate, overview }) => {
+const EducationItem = ({ title, organization, certificate, overview }) => {
 	return (
 		<article>
 			<div
@@ -9,8 +8,8 @@ const EduactionItem = ({ title, organization, certificate, overview }) => {
 				{title}
 			</div>
 			<p className="font-bold text-base  mb-5 ">{organization}</p>
-			<ul className="mb-5">
-				{overview && overview.map(bullet => <li>{`• ${bullet}`}</li>)}
+			<ul className="mb-5 ml-5 list-disc">
+				{overview && overview.map(bullet => <li>{bullet}</li>)}
 			</ul>
 			{certificate && (
 				<LinkBlank link={certificate} className="text-blue-400 underline">
@@ -21,4 +20,4 @@ const EduactionItem = ({ title, organization, certificate, overview }) => {
 	);
 };
 
-export default EduactionItem;
+export default EducationItem;

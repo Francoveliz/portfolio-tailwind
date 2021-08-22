@@ -1,5 +1,10 @@
-import { Navbar, About, Portfolio, Skills, Education } from "./components";
 import { backgroundColor } from "./assets/utils/theme";
+import Navbar from "./components/Navbar";
+import About from "./sections/About";
+import Education from "./sections/education/Education";
+import Idiomas from "./sections/Idiomas";
+import Portfolio from "./sections/Portfolio";
+import Skills from "./sections/skills/Skills";
 
 function App() {
 	return (
@@ -11,6 +16,7 @@ function App() {
 				<Portfolio />
 				<Skills />
 				<Education />
+				<Idiomas />
 			</main>
 		</div>
 	);

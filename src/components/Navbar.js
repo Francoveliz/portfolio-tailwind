@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ReactIcon } from "../../assets/icons";
+import { ReactIcon } from "../assets/icons";
 
 const Navbar = () => {
 	const [menuIsOpen, setMenuIsOpen] = useState("hidden");

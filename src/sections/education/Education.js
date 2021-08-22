@@ -1,8 +1,8 @@
 import React from "react";
-
-import { SectionTitle, EducationItem } from "../../components";
+import EducationItem from "./EducationItem";
+import SectionTitle from "../../components/SectionTitle";
 import { EducationIcon } from "../../assets/icons";
-import { degrees } from "../../assets/utils/content";
+import { degrees } from "../../assets/utils/content/degrees";
 
 const Education = () => {
 	return (
