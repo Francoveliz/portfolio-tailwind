@@ -19,7 +19,7 @@ function App() {
 		// 		<Idiomas />
 		// 	</main>
 		// </div>
-		<div className="flex items-center justify-center w-screen h-screen bg-yellow-400">
+		<div className="flex items-center justify-center w-screen h-screen p-8 bg-yellow-400">
 			<p className="text-4xl text-black">
 				Este porfolio se está remodelando, disculpe las molestias.
 			</p>
